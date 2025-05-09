@@ -1474,44 +1474,50 @@
 			
 			
 			<style>
-			/* ✅ Slider Container */
-			.about-one-slider .slider {
-				width: 100%;
-				overflow: hidden;
-				position: relative;
-/* 				background-color: #0b0b0b;  */
-				padding: 60px 0;
-			}
-			
-			/* ✅ Slides Wrapper */
-			.about-one-slider .slides {
-				display: flex;
-				width: 100%;
-				animation: slideTwo 12s infinite ease-in-out;
-			}
-			
-			/* ✅ Each Slide */
-			.about-one-slider .swiper-slide {
-				width: 100%;
-				flex-shrink: 0;
-			}
-			
-			/* ✅ Fix Container Spacing */
-			.about-one {
-				max-width: 1200px;
-				margin: 0 auto;
-				padding: 0 30px;
-				position: relative;
-				z-index: 1;
-			}
-			
-			/* ✅ Slide Animation */
-			@keyframes slideTwo {
-				0%, 45% { transform: translateX(0); }
-				50%, 95% { transform: translateX(-100%); }
-				100% { transform: translateX(0); }
-			}
-			</style>
+  /* ✅ Slider Container */
+  .about-one-slider .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent; /* removed the solid black */
+    background-image: inherit;     /* inherit from parent if needed */
+    padding: 60px 0;
+  }
+
+  /* ✅ Slides Wrapper */
+  .about-one-slider .slides {
+    display: flex;
+    width: 100%;
+    animation: slideTwo 12s infinite ease-in-out;
+  }
+
+  /* ✅ Each Slide */
+  .about-one-slider .swiper-slide {
+    width: 100%;
+    flex-shrink: 0;
+    background-color: transparent;
+    background-image: inherit;
+  }
+
+  /* ✅ Fix Container Spacing */
+  .about-one {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    background-image: inherit;
+  }
+
+  /* ✅ Slide Animation */
+  @keyframes slideTwo {
+    0%, 45% { transform: translateX(0); }
+    50%, 95% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+</style>
+
 			
 
 			<!-- end of new about section -->
